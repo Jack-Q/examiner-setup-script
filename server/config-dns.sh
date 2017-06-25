@@ -14,8 +14,7 @@ zoneFileName="${zoneFileDir}/db.${SRV_DNS_ZONE}"
 
 # Add local configure entry
 cp ${bindConfFile} ${bindConfFile}.backup
-echo ${bindConfFile}
-cat << EOF >> ${bindConfFile}
+cat << EOF > ${bindConfFile}
 zone "${SRV_DNS_ZONE}" {
   type master;
   file "${zoneFileName}";
