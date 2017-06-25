@@ -10,3 +10,4 @@ mkdir -p ~/.ssh/
 ssh-keygen -R ${CLI_SSH_HOST} 
 ssh-keyscan -H ${CLI_SSH_HOST} >> ~/.ssh/known_hosts
 
+ssh student@${CLI_SSH_HOST}
