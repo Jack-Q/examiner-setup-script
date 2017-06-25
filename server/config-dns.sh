@@ -68,7 +68,7 @@ function tryResolve() {
 }
 
 # Validate the configuration
-tryResolve reg.test-examination.edu $serverInetAddr
-tryResolve ftp.test-examination.edu $serverInetAddr
-tryResolve ns.test-examination.edu $serverInetAddr
-tryResolve www.test-examination.edu $serverInetAddr
+tryResolve reg.${SRV_DNS_ZONE} $serverInetAddr
+tryResolve ftp.${SRV_DNS_ZONE} $serverInetAddr
+tryResolve ns.${SRV_DNS_ZONE} $serverInetAddr
+tryResolve www.${SRV_DNS_ZONE} $serverInetAddr
