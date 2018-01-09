@@ -7,6 +7,7 @@ sudo apt-get -qqy dist-upgrade
 # install packages
 sudo apt-get -qqy install \
   bind9 bind9utils \
+  gawk openssh-server\
   quotatool \
   vsftpd \
   apache2 \
